@@ -1,0 +1,17 @@
+def b(j):
+    if j==0:
+        return 0
+    if j==1:
+        return 1
+    else:
+        return(b(j-2)+b(j-1))
+
+
+
+def a(n):
+    for i in range (n):
+        print (b(i),end= " ")
+        
+
+
+a(9)
