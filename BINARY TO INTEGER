@@ -1,0 +1,8 @@
+a="1011"
+b=0
+c=0
+for i in range(len(a)-1,-1,-1):
+    if a[i]=='1':
+        b=b+(2**b)
+    c=c+1
+print(b)
