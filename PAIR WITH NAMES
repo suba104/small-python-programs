@@ -1,0 +1,14 @@
+names=["kavin","vicky","mohit","suba","aishwarya","roshini"]
+gender=['M','M','M','F','F','F']
+f=[]
+m=[]
+for i in range(len(gender)):
+    if gender[i]=='M':
+        m.append(names[i])
+    else:
+        f.append(names[i])
+pos=1
+for i in range(len(m)):
+    for j in range(len(f)):
+        print("team{}.{} and {}".format(pos,m[i],f[j]))
+        pos=pos+1
